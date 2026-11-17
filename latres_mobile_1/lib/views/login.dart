@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'nav.dart';
+import '../nav.dart';
 
 
 const String kNim = '124240055';

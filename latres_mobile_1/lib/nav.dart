@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
-import 'profile.dart';
+import 'views/home.dart';
+import 'views/profile.dart';
 
 class MainPage extends StatefulWidget {
   final String username;

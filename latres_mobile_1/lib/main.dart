@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'login.dart';
+import 'views/login.dart';
 import 'nav.dart';
 
 Future<void> main() async {
@@ -19,10 +19,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Toko Online',
+      title: 'Latihan Responsi',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorSchemeSeed: Colors.indigo, useMaterial3: true),
-      // Sudah login -> langsung ke halaman utama
       home: username == null
           ? const LoginPage()
           : MainPage(username: username!),
